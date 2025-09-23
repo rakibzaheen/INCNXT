@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+/* React Datepicker Styles */
+@import "react-datepicker/dist/react-datepicker.css";
+
+/* Customizing the DatePicker to match the theme */
+.react-datepicker__input-container input {
+  @apply w-full;
+}
+
+.react-datepicker-popper {
+  @apply z-50;
+}
+
+.react-datepicker {
+  @apply shadow-lg border border-gray-200 rounded-lg font-sans;
+}
+
+.react-datepicker__header {
+  @apply bg-gray-50 border-b border-gray-200 rounded-t-lg;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  @apply bg-[#D51F27] hover:bg-[#b81a21] text-white;
+}
+
+.react-datepicker__day:hover {
+  @apply bg-gray-100;
+}
+
+.react-datepicker__day--today {
+  @apply font-bold text-[#D51F27];
+}
