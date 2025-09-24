@@ -1,6 +1,7 @@
 // BizeeLandingPage.tsx
 import React from 'react';
-import { Star, ArrowRight, CheckCircle, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
+import { Star, ArrowRight, ChevronRight } from 'lucide-react';
 
 // SECTION: TypeScript Interfaces
 interface Feature {
@@ -125,7 +126,7 @@ export const BizeeLandingPage = () => {
               </div>
             </div>
             <div className="flex justify-center">
-              <img src="https://i.ibb.co/68vD84T/phone-mockup.png" alt="Phone showing a success checkmark for a filed report" className="max-w-xs md:max-w-sm w-full" />
+              <Image src="https://i.ibb.co/68vD84T/phone-mockup.png" alt="Phone showing a success checkmark for a filed report" width={320} height={640} className="max-w-xs md:max-w-sm w-full" />
             </div>
           </div>
           <div className="text-center mt-16 text-sm text-gray-600">
@@ -137,7 +138,7 @@ export const BizeeLandingPage = () => {
         <section className="px-6 py-16 md:py-24 bg-white">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900">Why File With Bizee?</h2>
           <div className="mt-12 max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-            <img src="https://i.ibb.co/D8G3Ww9/bizee-person.png" alt="Friendly Bizee representative" className="rounded-lg w-full max-w-md mx-auto" />
+            <Image src="https://i.ibb.co/D8G3Ww9/bizee-person.png" alt="Friendly Bizee representative" width={400} height={400} className="rounded-lg w-full max-w-md mx-auto" />
             <div className="space-y-4">
               {featuresData.map((feature, index) => (
                 <FeatureCard key={index} number={index + 1} feature={feature} />
@@ -180,16 +181,16 @@ export const BizeeLandingPage = () => {
                     </ul>
                 </div>
                 <div className="lg:col-span-2 prose prose-lg max-w-none text-gray-700">
-                    <h2 className="text-3xl !mb-6 font-bold text-gray-900">What Happens If You Don’t File an Annual Report (All Business Entities Covered)</h2>
-                    <p>
-                        The must-know details about who files one, and the risks of failing to.
-                    </p>
-                    <p>
-                        There's a lot of paperwork you need to complete and file when you're running a business, and one of the most important is the annual report. The process of completing, filing and returning these reports do vary between states. If you're legally required to file one, you must always do so. Failing to file an annual report can cause serious problems for your business.
-                    </p>
-                    <p>
-                        We'll explain the penalties for not filing your annual report, let you know how to avoid them and ensure your business stays in good standing.
-                    </p>
+                    <h2 className="text-3xl !mb-6 font-bold text-gray-900">What Happens If You Don&apos;t File an Annual Report (All Business Entities Covered)</h2>
+          <p>
+            The must-know details about who files one, and the risks of failing to.
+          </p>
+          <p>
+            There&apos;s a lot of paperwork you need to complete and file when you&apos;re running a business, and one of the most important is the annual report. The process of completing, filing and returning these reports do vary between states. If you&apos;re legally required to file one, you must always do so. Failing to file an annual report can cause serious problems for your business.
+          </p>
+          <p>
+            We&apos;ll explain the penalties for not filing your annual report, let you know how to avoid them and ensure your business stays in good standing.
+          </p>
                 </div>
             </div>
         </section>

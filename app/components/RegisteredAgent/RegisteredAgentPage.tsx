@@ -2,6 +2,7 @@
 // RegisteredAgentPage.tsx
 import React, { useState } from "react";
 import { Star, ArrowRight, ChevronDown, PlayCircle } from "lucide-react";
+import Image from 'next/image';
 
 // SECTION: TypeScript Interfaces & Data
 // Defining types and data separately makes the component cleaner and easier to update.
@@ -135,14 +136,14 @@ export const RegisteredAgentPage = () => {
                 Receive a Free First Year of Registered Agent
               </h1>
               <p className="mt-6 text-lg text-gray-600">
-                A registered agent is required by law to maintain your business's compliance. Our service is fast, affordable, and helps ensure your state compliance.
+                A registered agent is required by law to maintain your business&#39;s compliance. Our service is fast, affordable, and helps ensure your state compliance.
               </p>
               <div className="mt-8 grid sm:grid-cols-2 gap-6">
                 {pricingPlans.map((plan, index) => <PricingCard key={index} plan={plan} />)}
               </div>
             </div>
             <div className="hidden lg:flex justify-center">
-              <img src="https://i.ibb.co/68vD84T/phone-mockup.png" alt="Phone showing the Bizee app interface" className="max-w-xs md:max-w-sm w-full" />
+              <Image src="https://i.ibb.co/68vD84T/phone-mockup.png" alt="Phone showing the Bizee app interface" width={400} height={800} className="max-w-xs md:max-w-sm w-full" />
             </div>
           </div>
         </section>
@@ -151,13 +152,13 @@ export const RegisteredAgentPage = () => {
         <section className="px-6 py-12">
           <div className="max-w-6xl mx-auto bg-slate-50 rounded-2xl grid md:grid-cols-2 items-center gap-8 p-8">
             <div className="text-center md:text-left">
-              <h2 className="text-2xl font-bold text-gray-900">Bizee's Startup Central</h2>
+              <h2 className="text-2xl font-bold text-gray-900">Bizee&#39;s Startup Central</h2>
               <p className="mt-2 text-gray-600">The media center. Guts, grit, and a game plan for launching your business.</p>
               <a href="#" className="mt-6 group inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-white bg-orange-500 rounded-md hover:bg-orange-600 transition-colors">
-                Visit Bizee's Startup Central <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                Visit Bizee&#39;s Startup Central <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
-             <img src="https://i.ibb.co/3k5fT9V/startup-central-assets.png" alt="Cards showing Business Ideas" className="w-full max-w-sm mx-auto"/>
+             <Image src="https://i.ibb.co/3k5fT9V/startup-central-assets.png" alt="Cards showing Business Ideas" width={400} height={300} className="w-full max-w-sm mx-auto"/>
           </div>
         </section>
         
@@ -175,7 +176,7 @@ export const RegisteredAgentPage = () => {
                 </div>
               ))}
             </div>
-            <img src="https://i.ibb.co/q9P5wDq/bizee-woman-representative.png" alt="A friendly Bizee representative" className="rounded-lg w-full max-w-md mx-auto" />
+            <Image src="https://i.ibb.co/q9P5wDq/bizee-woman-representative.png" alt="A friendly Bizee representative" width={400} height={500} className="rounded-lg w-full max-w-md mx-auto" />
           </div>
         </section>
 
@@ -200,7 +201,7 @@ export const RegisteredAgentPage = () => {
               </div>
             </div>
             <a href="#" className="group relative aspect-video rounded-xl overflow-hidden shadow-lg">
-              <img src="https://i.ibb.co/N6BvyyM/video-thumbnail.png" alt="Video thumbnail for Registered Agent services" className="w-full h-full object-cover"/>
+              <Image src="https://i.ibb.co/N6BvyyM/video-thumbnail.png" alt="Video thumbnail for Registered Agent services" width={400} height={225} className="w-full h-full object-cover"/>
               <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                 <PlayCircle className="w-20 h-20 text-white opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"/>
               </div>

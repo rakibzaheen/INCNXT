@@ -1,6 +1,7 @@
 // ArticlePage.tsx
 import React from 'react';
 import { Linkedin, Facebook, Twitter, Link, Bookmark, Clock, Mic } from 'lucide-react';
+import Image from 'next/image';
 
 // SECTION: TypeScript Interfaces
 // Defining types for our data structures for type safety.
@@ -96,10 +97,9 @@ const SidebarSection = ({ title, children }: { title: string; children: React.Re
     </div>
   </div>
 );
-
 const FeaturedArticleCard = ({ article }: { article: FeaturedArticle }) => (
   <a href="#" className="group flex items-center gap-4">
-    <img src={article.imageUrl} alt={article.title} className="w-20 h-20 object-cover rounded-md flex-shrink-0" />
+    <Image src={article.imageUrl} alt={article.title} width={80} height={80} className="w-20 h-20 object-cover rounded-md flex-shrink-0" />
     <div>
       <h4 className="font-bold text-gray-800 group-hover:text-red-600 transition-colors duration-200 leading-tight">
         {article.title}
@@ -113,7 +113,7 @@ const FeaturedArticleCard = ({ article }: { article: FeaturedArticle }) => (
 
 const PodcastEpisodeCard = ({ episode }: { episode: PodcastEpisode }) => (
   <a href="#" className="group flex items-center gap-4">
-    <img src={episode.imageUrl} alt={episode.title} className="w-16 h-16 object-cover rounded-full flex-shrink-0" />
+    <Image src={episode.imageUrl} alt={episode.title} width={64} height={64} className="w-16 h-16 object-cover rounded-full flex-shrink-0" />
     <div>
       <h4 className="font-bold text-gray-800 group-hover:text-red-600 transition-colors duration-200">
         {episode.title}
@@ -145,7 +145,7 @@ export const ArticlePage = () => {
                 Choosing the Right Business Structure for Your New Business Idea
               </h1>
               <p className="text-lg md:text-xl text-gray-600">
-                It's crucial to align your business's legal framework with its goals from the very start.
+                It&#39;s crucial to align your business&#39;s legal framework with its goals from the very start.
               </p>
             </header>
 
@@ -172,55 +172,61 @@ export const ArticlePage = () => {
 
             {/* Article Body */}
             <article className="prose prose-lg max-w-none text-gray-700">
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80" 
                 alt="Business meeting around a table"
+                width={1200}
+                height={800}
                 className="rounded-lg mb-8 w-full"
               />
               <p>
                 <span className="float-left text-7xl font-bold mr-3 mt-1 text-gray-900">C</span>ongratulations on your new business idea! Now comes the exciting part: Turning your vision into reality. But before you dive into raising capital or creating an organizational chart, one critical decision is choosing the right business structure.
               </p>
               <p>
-                Creating a business structure may sound complex, but the guide below will help you navigate the process. While you may not realize it yet, the structure you choose for your business will affect how you pay taxes, liability exposure, and manage your day-to-day ops. Let's break down the different business entity types to help you pick the best business structure.
+                Creating a business structure may sound complex, but the guide below will help you navigate the process. While you may not realize it yet, the structure you choose for your business will affect how you pay taxes, liability exposure, and manage your day-to-day ops. Let&#39;s break down the different business entity types to help you pick the best business structure.
               </p>
               
               <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">What Is a Business Structure?</h2>
               <p>
-                Think of a business structure as a house. While it isn’t a physical object, it does provide the framework for your business's legal and financial operations. Additionally, there are different types of structures, each with its own set of rules and benefits.
+                Think of a business structure as a house. While it isn&#39;t a physical object, it does provide the framework for your business&#39;s legal and financial operations. Additionally, there are different types of structures, each with its own set of rules and benefits.
               </p>
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1556740738-b6a63e2775d2?w=1200&q=80" 
                 alt="Two people in a casual business meeting"
                 className="rounded-lg my-8 w-full"
               />
               <p>
-                Choosing the right business structure is like choosing the right kind of house for your needs. A small bakery might not need the same structure as a tech startup planning to go public. The bakery may be best as a sole proprietorship if its owner is small, has few liabilities, and focuses on local customers. However, the tech company might need a structure for rapid growth, liability protection for its founders, and easier access to venture capital. The choice of structure affects almost everything. It influences how you're taxed, your personal liability, and the paperwork you need to file. So, it's crucial to align your business's legal framework with its goals from the very start.
+                Choosing the right business structure is like choosing the right kind of house for your needs. A small bakery might not need the same structure as a tech startup planning to go public. The bakery may be best as a sole proprietorship if its owner is small, has few liabilities, and focuses on local customers. However, the tech company might need a structure for rapid growth, liability protection for its founders, and easier access to venture capital. The choice of structure affects almost everything. It influences how you&#39;re taxed, your personal liability, and the paperwork you need to file. So, it&#39;s crucial to align your business&#39;s legal framework with its goals from the very start.
               </p>
             </article>
              <article className="prose prose-lg max-w-none text-gray-700">
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80" 
                 alt="Business meeting around a table"
+                width={1200}
+                height={800}
                 className="rounded-lg mb-8 w-full"
               />
               <p>
                 <span className="float-left text-7xl font-bold mr-3 mt-1 text-gray-900">C</span>ongratulations on your new business idea! Now comes the exciting part: Turning your vision into reality. But before you dive into raising capital or creating an organizational chart, one critical decision is choosing the right business structure.
               </p>
               <p>
-                Creating a business structure may sound complex, but the guide below will help you navigate the process. While you may not realize it yet, the structure you choose for your business will affect how you pay taxes, liability exposure, and manage your day-to-day ops. Let's break down the different business entity types to help you pick the best business structure.
+                Creating a business structure may sound complex, but the guide below will help you navigate the process. While you may not realize it yet, the structure you choose for your business will affect how you pay taxes, liability exposure, and manage your day-to-day ops. Let&#39;s break down the different business entity types to help you pick the best business structure.
               </p>
               
               <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">What Is a Business Structure?</h2>
               <p>
-                Think of a business structure as a house. While it isn’t a physical object, it does provide the framework for your business's legal and financial operations. Additionally, there are different types of structures, each with its own set of rules and benefits.
+                Think of a business structure as a house. While it isn&#39;t a physical object, it does provide the framework for your business&#39;s legal and financial operations. Additionally, there are different types of structures, each with its own set of rules and benefits.
               </p>
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1556740738-b6a63e2775d2?w=1200&q=80" 
                 alt="Two people in a casual business meeting"
+                width={1200}
+                height={800}
                 className="rounded-lg my-8 w-full"
               />
               <p>
-                Choosing the right business structure is like choosing the right kind of house for your needs. A small bakery might not need the same structure as a tech startup planning to go public. The bakery may be best as a sole proprietorship if its owner is small, has few liabilities, and focuses on local customers. However, the tech company might need a structure for rapid growth, liability protection for its founders, and easier access to venture capital. The choice of structure affects almost everything. It influences how you're taxed, your personal liability, and the paperwork you need to file. So, it's crucial to align your business's legal framework with its goals from the very start.
+                Choosing the right business structure is like choosing the right kind of house for your needs. A small bakery might not need the same structure as a tech startup planning to go public. The bakery may be best as a sole proprietorship if its owner is small, has few liabilities, and focuses on local customers. However, the tech company might need a structure for rapid growth, liability protection for its founders, and easier access to venture capital. The choice of structure affects almost everything. It influences how you&#39;re taxed, your personal liability, and the paperwork you need to file. So, it&#39;s crucial to align your business&#39;s legal framework with its goals from the very start.
               </p>
             </article>
           </main>
@@ -248,4 +254,4 @@ export const ArticlePage = () => {
       </div>
     </div>
   );
-};
+}

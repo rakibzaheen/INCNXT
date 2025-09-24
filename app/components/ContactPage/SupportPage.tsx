@@ -191,10 +191,10 @@ export const SupportPage: FC = () => {
 
             {/* Right Column: Contact Details */}
             <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-gray-900">Contact Bizee</h2>
+                <h2 className="text-3xl font-bold text-gray-900">Contact INCNTX</h2>
                 <p className="text-gray-600">
                     You can expect a real person to answer your questions and provide the help you need. 
-                    Bizee's entire customer support team is fluent in both English and Spanish.
+                    INCNTX entire customer support team is fluent in both English and Spanish.
                 </p>
                 <div className="text-sm font-semibold text-gray-500 bg-gray-100 p-2 rounded-md inline-block">
                     Monday - Friday from 9 a.m. to 6 p.m. CST

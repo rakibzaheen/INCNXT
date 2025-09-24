@@ -7,8 +7,6 @@ interface VisionFocusCTAProps {
   description?: string;
   buttonText?: string;
   onButtonClick?: () => void;
-  className?: string;
-  backgroundColor?: void | 'white' | 'gray' | 'blue' | 'primary';
 }
 
 const VisionFocusCTA: React.FC<VisionFocusCTAProps> = ({
@@ -16,16 +14,10 @@ const VisionFocusCTA: React.FC<VisionFocusCTAProps> = ({
   description,
   buttonText,
   onButtonClick,
-  className,
-  backgroundColor,
+  // ...existing code...
 }) => {
   
-  const backgroundClasses = {
-    white: "bg-white",
-    gray: "bg-gray-50",
-    blue: "bg-blue-50",
-    primary: "bg-[#0F395D]"
-  };
+  // ...existing code...
 
   return (
     <section className={`py-5 px-4 sm:px-6 lg:px-8 `}>

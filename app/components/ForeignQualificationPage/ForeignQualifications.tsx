@@ -1,7 +1,7 @@
 "use client";
 // src/components/ForeignQualification.tsx
 
-import type { FC, SVGProps } from 'react';
+import type { FC } from 'react';
 import { Star, MapPin, CheckCircle } from 'lucide-react'; // Added CheckCircle for potential future use or dynamic lists
 
 // A simple phone mockup component to display images (reused from previous component)
@@ -17,7 +17,7 @@ const PhoneMockup: FC<{ children: React.ReactNode; className?: string }> = ({ ch
   </div>
 );
 
-export const ForeignQualification: FC = () => {
+const ForeignQualifications: FC = () => {
   return (
     <div className="bg-white text-gray-800 font-sans">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
@@ -90,7 +90,7 @@ export const ForeignQualification: FC = () => {
           <div className="order-1 md:order-2 text-center md:text-left">
             <h2 className="text-3xl font-bold mb-4">What Is Foreign Qualification?</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Foreign Qualification is the legal process of registering your business to operate in a state other than where it was formed. Your business is considered <span className="font-semibold text-gray-900">"domestic"</span> in its home state and <span className="font-semibold text-gray-900">"foreign"</span> in any other state.
+              Foreign Qualification is the legal process of registering your business to operate in a state other than where it was formed. Your business is considered <span className="font-semibold text-gray-900">&quot;domestic&quot;</span> in its home state and <span className="font-semibold text-gray-900">&quot;foreign&quot;</span> in any other state.
             </p>
             <p className="text-gray-600 leading-relaxed">
               When you file for Foreign Qualification, you receive a <span className="font-semibold text-gray-900">Certificate of Authority</span> from the new state, granting you legal permission to do business there. Businesses must complete this process in every state where they have significant operations, such as offices, employees, or major contracts.
@@ -128,7 +128,7 @@ export const ForeignQualification: FC = () => {
             <li className="flex items-start gap-3">
               <CheckCircle className="flex-shrink-0 w-6 h-6 text-green-500 mt-1" />
               <span>
-                Ensure your <span className="font-semibold">business name</span> is available in the new state. If not, you may need to register a "fictitious name" or DBA.
+                Ensure your <span className="font-semibold">business name</span> is available in the new state. If not, you may need to register a &quot;fictitious name&quot; or DBA.
               </span>
             </li>
           </ul>
@@ -138,3 +138,4 @@ export const ForeignQualification: FC = () => {
     </div>
   );
 };
+export default ForeignQualifications;

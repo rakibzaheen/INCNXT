@@ -1,5 +1,6 @@
 // BusinessGuideArticle.tsx
 import type { FC } from 'react';
+import Image from 'next/image';
 import { Mail, Linkedin, Facebook, Heart, Mic, Clock } from 'lucide-react';
 
 // --- TYPE DEFINITIONS ---
@@ -59,9 +60,11 @@ const featuredPodcasts: Omit<FeaturedItemProps, 'type'>[] = [
 
 const FeaturedItem: FC<FeaturedItemProps> = ({ type, imageUrl, title, description, duration }) => (
   <a href="#" className="group flex items-start gap-4">
-    <img
+    <Image
       src={imageUrl}
       alt={title}
+      width={type === 'podcast' ? 64 : 96}
+      height={type === 'podcast' ? 64 : 80}
       className={`object-cover ${type === 'podcast' ? 'w-16 h-16 rounded-full' : 'w-24 h-20 rounded-md'}`}
     />
     <div className="flex-1">
@@ -157,28 +160,30 @@ const BusinessGuideArticle: FC = () => {
 
               {/* Main Image */}
               <figure className="my-8">
-                                <img
-                  className="w-full h-auto rounded-lg shadow-md"
-                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80"
-                  alt="A team of entrepreneurs in a business meeting"
-                />
+                  <Image
+                    className="w-full h-auto rounded-lg shadow-md"
+                    src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80"
+                    alt="A team of entrepreneurs in a business meeting"
+                    width={1200}
+                    height={800}
+                  />
               </figure>
 
               {/* Article Body */}
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                 <p className="text-xl">
                   <span className="float-left mr-3 mt-1 text-7xl font-bold text-gray-900">S</span>
-                  tarting your own business is an exciting journey that requires careful planning, preparation, and execution. This comprehensive guide will take you through the essential steps, from conceptualizing an idea and in-depth brainstorming and market research to legal requirements and funding, we've got you covered.
+                  tarting your own business is an exciting journey that requires careful planning, preparation, and execution. This comprehensive guide will take you through the essential steps, from conceptualizing an idea and in-depth brainstorming and market research to legal requirements and funding, we&#39;ve got you covered.
                 </p>
 
                 <h2 className="mt-12">How To Start A Business: Proper Planning and Preparation</h2>
                 <p>
-                  Starting your own business is not just about having a great idea; it's about turning that idea into a sustainable and profitable venture. Proper planning and preparation are the cornerstones of a strong business and the foundation for success. Planning helps you foresee potential challenges and prepare solutions in advance. Additionally, it ensures that you have a clear roadmap to guide your business decisions and actions.
+                  Starting your own business is not just about having a great idea; it&#39;s about turning that idea into a sustainable and profitable venture. Proper planning and preparation are the cornerstones of a strong business and the foundation for success. Planning helps you foresee potential challenges and prepare solutions in advance. Additionally, it ensures that you have a clear roadmap to guide your business decisions and actions.
                 </p>
 
                 <h2 className="mt-12">Brief Overview of Key Steps Involved in Starting a Business</h2>
                 <p>
-                  We'll walk you through all the steps required to start a business, so you can feel confident understanding the key components of getting your company off the ground, including:
+                  We&#39;ll walk you through all the steps required to start a business, so you can feel confident understanding the key components of getting your company off the ground, including:
                 </p>
                 <ul className="list-disc list-inside space-y-2 pl-2">
                   <li>Conceptualizing your idea</li>
@@ -189,7 +194,7 @@ const BusinessGuideArticle: FC = () => {
                   <li>Launching your business</li>
                 </ul>
                 <p>
-                  Each of these steps is critical, builds upon the previous one, and synergistically helps to ensure that your business is well-prepared for success. There are a lot of questions to ask when starting a business, and we're here to help you answer them.
+                  Each of these steps is critical, builds upon the previous one, and synergistically helps to ensure that your business is well-prepared for success. There are a lot of questions to ask when starting a business, and we&#39;re here to help you answer them.
                 </p>
               </div>
             </article>

@@ -18,7 +18,7 @@ const PhoneMockup: FC<{ children: React.ReactNode; className?: string }> = ({ ch
 
 // Define types for our data structures for better code quality
 type FeatureInfo = {
-  icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  icon: React.ComponentType<SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
 };
@@ -80,7 +80,7 @@ export const ArticlesOfAmendment: FC = () => {
               File Articles of Amendment
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              Here's how to change your LLC's name, address, or member information seamlessly.
+              Here&#39;s how to change your LLC&#39;s name, address, or member information seamlessly.
             </p>
             <button className="bg-orange-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105">
               ARTICLES OF AMENDMENT
@@ -139,7 +139,7 @@ export const ArticlesOfAmendment: FC = () => {
           <div className="order-1 md:order-2 text-center md:text-left">
             <h2 className="text-3xl font-bold mb-4">What Are Articles of Amendment?</h2>
             <p className="text-gray-600 leading-relaxed">
-              Articles of Amendment are filed when a company makes a significant change to its founding documents, like the Articles of Organization, that were created when the business first formed. As your organization evolves, it's almost inevitable that you'll need to change some of the important parameters of your business. That’s where Articles of Amendment come in.
+              Articles of Amendment are filed when a company makes a significant change to its founding documents, like the Articles of Organization, that were created when the business first formed. As your organization evolves, it&#39;s almost inevitable that you&#39;ll need to change some of the important parameters of your business. That’s where Articles of Amendment come in.
             </p>
           </div>
         </section>
