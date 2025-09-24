@@ -1,11 +1,11 @@
+import { BizeeLandingPage } from '@/app/components/AnnualReport/BizeeLandingPage'
 import React from 'react'
 
-const AnnualReport
- = () => {
+const AnnualReport = () => {
   return (
-    <div>AnnualReport
-        
-    </div>
+    <>
+      <BizeeLandingPage />
+    </>
   )
 }
 
