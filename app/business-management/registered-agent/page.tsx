@@ -1,11 +1,12 @@
+import { RegisteredAgentPage } from '@/app/components/RegisteredAgent/RegisteredAgentPage'
 import React from 'react'
 
 const RegisteredAgent
  = () => {
   return (
-    <div>RegisteredAgent
-        
-    </div>
+    <>
+  <RegisteredAgentPage/>
+    </>
   )
 }
 
